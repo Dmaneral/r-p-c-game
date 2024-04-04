@@ -1,0 +1,192 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+header {
+  width: 85%;
+  height: fit-content;
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9rem;
+}
+
+.scoreBox {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.3rem;
+  border-radius: 7px;
+}
+
+.scoreBox h2 {
+  color: hsl(229, 64%, 46%);
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.score {
+  color: hsl(229, 25%, 31%);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.rulesButton {
+  width: 39%;
+  background-color: transparent;
+  padding: 0.6rem 0;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 8px;
+
+  color: white;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.gameBox {
+  width: fit-content;
+  height: fit-content;
+  /* background-image: url('./assets/bg-triangle.svg');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangle {
+  width: calc(100% - 5rem);
+}
+
+.RPSBox {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paperBox {
+  background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow:  0px 6px 0px #2A46C1;
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+}
+
+.scissorsBox {
+  background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow:  0px 6px 0px #C76C1D;
+  position: absolute;
+  right: 1rem;
+  top: -3rem;
+}
+
+.rockBox {
+  background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow:  0px 6px 0px #A01936;
+  left: calc(50% - 4rem);
+  position: absolute;
+  bottom: 0rem;
+  left: auto;
+}
+
+.RPSBg {
+  width: 77%;
+  height: 77%;
+  border-radius: 100%;
+  background-color: white;
+  box-shadow: inset 0px 6px 0px #B9BED4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultBox {
+  position: static;
+}
+
+.gameResult {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.choicesWrapper {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playerChoice, .houseChoice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.houseChoice {
+  position: relative;
+}
+
+
+.emptySlot {
+  width: calc(7rem * 77 / 100);
+  height: calc(7rem * 77 / 100);
+  margin: calc((7rem - 7rem * 77 / 100) / 2);
+  background-color: hsla(229, 25%, 31%, 0.3);
+  border-radius: 100%;
+}
+
+.showResult {
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resultText {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-weight: 700;
+}
+
+.playAgain {
+  width: 13rem;
+  height: 2.7rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
